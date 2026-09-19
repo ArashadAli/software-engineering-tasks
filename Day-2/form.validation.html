@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.validation.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Registration Form</h1>
+
+        <form id="registration-form">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                <small class="error" id="name-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <small class="error" id="email-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile">
+                <small class="error" id="mobile-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" name="dob">
+                <small class="error" id="dob-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <small class="error" id="gender-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+
+                <div class="password-box">
+                    <input type="password" id="password" name="password">
+                    <button type="button" class="toggle-password" id="password-toggle">
+                        Show
+                    </button>
+                </div>
+
+                <small class="error" id="password-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+
+                <div class="password-box">
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    <button type="button" class="toggle-password" id="confirm-password-toggle">
+                        Show
+                    </button>
+                </div>
+
+                <small class="error" id="confirm-password-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+                <small class="error" id="address-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select Country</option>
+                </select>
+                <small class="error" id="country-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select id="state" name="state" disabled>
+                    <option value="">Select State</option>
+                </select>
+                <small class="error" id="state-error"></small>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I accept the Terms & Conditions</label>
+            </div>
+
+            <small class="error" id="terms-error"></small>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <p id="success-message"></p>
+
+        </form>
+    </main>
+
+    <script src="form.validation.js"></script>
+</body>
+</html>
