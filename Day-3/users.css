@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #333;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.85;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #333;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    margin-left: 8px;
+}
