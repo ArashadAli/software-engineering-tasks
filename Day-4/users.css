@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+
+.search-box label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.filters {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.filter-group label {
+    font-weight: bold;
+}
+
+
+.filter-group select {
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.table-container {
+    overflow-x: auto;
+    display: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+
+.role {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.role.admin {
+    background-color: #e8eaf6;
+    color: #3949ab;
+}
+
+.role.user {
+    background-color: #e6f7e6;
+    color: #2e7d32;
+}
+
+.role.moderator {
+    background-color: #fff4e5;
+    color: #ef6c00;
+}
+
+.delete-btn {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+
+
+.loading-state {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+
+
+.error-state {
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff3f3;
+    border: 1px solid #f1b5b5;
+    border-radius: 5px;
+}
+
+
+.error-state p {
+    margin-bottom: 10px;
+    color: #c62828;
+    font-weight: bold;
+}
+
+
+.error-state button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+
+.error-state button:hover {
+    opacity: 0.85;
+}
+
+
+
+.empty-state {
+    display: none;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+
+
+
+.pagination {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 25px;
+}
+
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.pagination button:hover {
+    background-color: #f1f1f1;
+}
+
+
+.pagination .active-page {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+
+.modal-content label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+
+.save-btn,
+.cancel-btn {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.save-btn {
+    background-color: #333;
+    color: white;
+}
+
+
+.cancel-btn {
+    background-color: #ccc;
+    margin-left: 8px;
+}
